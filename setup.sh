@@ -38,8 +38,8 @@ rm -f /root/wg.sh
 rm -f /root/ss.sh
 rm -f /root/ssr.sh
 rm -f /root/ins-vt.sh
-rm -f /root/ipsec.sh
-rm -f /root/set-br.sh
+#rm -f /root/ipsec.sh
+#rm -f /root/set-br.sh
 history -c
 echo "1.2" > /home/ver
 clear
@@ -87,9 +87,8 @@ echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   - Dev/Main                : Horas Marolop Amsal Siregar"  | tee -a log-install.txt
-echo "   - Telegram                : T.me/bosok69"  | tee -a log-install.txt
-echo "   - Whatsapp                : 601122334455"  | tee -a log-install.txt
-echo "------------------Script Mod By Zhang-Zi-----------------" | tee -a log-install.txt
+echo "   - Telegram                : T.me/akiraa22"  | tee -a log-install.txt
+echo "------------------Script ReMod By akiraa-----------------" | tee -a log-install.txt
 echo ""
 rm -f setup.sh
 
