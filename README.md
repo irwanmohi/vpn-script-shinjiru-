@@ -1,6 +1,7 @@
 # vpn-script
 testing phase
-for Debian 9/10, Ubuntu 18/20
+
+for Debian 9 & 10
 
 apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 
