@@ -9,16 +9,16 @@ source /etc/os-release
 ver=$VERSION_ID
 
 #detail nama perusahaan
-country=ID
-state=Indonesia
-locality=Indonesia
-organization=www.vpninjector.com
-organizationalunit=vpninjector
-commonname=zhang-zi
-email=admin@vpninjector.com
+country=MY
+state=Selangor
+locality=TPG
+organization=www.akiraamy-vpn.xyz
+organizationalunit=akiraavpn
+commonname=akiraa
+email=admin@akiraavpn.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/zahwanugrah/auto/main/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/password?token=AQVYALKC3SAHD7RAN5NZEETBBO6I6"
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -87,12 +87,12 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/zahwanugrah/auto/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/vps.conf?token=AQVYALPA7CUQX7GLOOLG57TBBO6KK"
 /etc/init.d/nginx restart
 
 # install badvpn
 cd
-wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/zahwanugrah/auto/main/badvpn-udpgw64"
+wget -O /usr/bin/badvpn-udpgw "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/badvpn-udpgw64?token=AQVYALNYHAFJTILNZU6DASDBBO6OW"
 chmod +x /usr/bin/badvpn-udpgw
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7100 --max-clients 500' /etc/rc.local
 sed -i '$ i\screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7200 --max-clients 500' /etc/rc.local
@@ -122,7 +122,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 # install squid
 cd
 apt -y install squid3
-wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/zahwanugrah/auto/main/squid3.conf"
+wget -O /etc/squid/squid.conf "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/squid3.conf?token=AQVYALJJDGZKEI4ZQVEU7O3BBO6RU"
 sed -i $MYIP2 /etc/squid/squid.conf
 
 # setting vnstat
