@@ -89,10 +89,10 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O add-wg "https://raw.githubusercontent.com/zahwanugrah/auto/main/add-wg.sh"
-wget -O del-wg "https://raw.githubusercontent.com/zahwanugrah/auto/main/del-wg.sh"
-wget -O cek-wg "https://raw.githubusercontent.com/zahwanugrah/auto/main/cek-wg.sh"
-wget -O renew-wg "https://raw.githubusercontent.com/zahwanugrah/auto/main/renew-wg.sh"
+wget -O add-wg "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/add-wg.sh"
+wget -O del-wg "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/del-wg.sh"
+wget -O cek-wg "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/cek-wg.sh"
+wget -O renew-wg "https://raw.githubusercontent.com/akiraafudo/vpn-script/master/renew-wg.sh"
 chmod +x add-wg
 chmod +x del-wg
 chmod +x cek-wg
