@@ -15,7 +15,7 @@ apt install openvpn easy-rsa unzip -y
 apt install openssl iptables iptables-persistent -y
 mkdir -p /etc/openvpn/server/easy-rsa/
 cd /etc/openvpn/
-wget https://github.com/zahwanugrah/auto/raw/main/vpn.zip
+wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/vpn.zip
 unzip vpn.zip
 rm -f vpn.zip
 chown -R root:root /etc/openvpn/server/easy-rsa/
@@ -79,7 +79,7 @@ cat > /etc/openvpn/client-tcp-ssl.ovpn <<-END
 client
 dev tun
 proto tcp
-remote xxxxxxxxx 443
+remote xxxxxxxxx 992
 resolv-retry infinite
 route-method exe
 nobind
