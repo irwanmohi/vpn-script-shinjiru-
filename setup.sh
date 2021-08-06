@@ -19,10 +19,10 @@ mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+#wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #wget https://raw.githubusercontent.com/zahwanugrah/auto/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+#wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
 wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
