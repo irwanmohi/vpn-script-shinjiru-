@@ -34,23 +34,6 @@ wget https://raw.githubusercontent.com/akiraafudo/vpn-script/master/ins-vt.sh &&
 #wget https://raw.githubusercontent.com/zahwanugrah/auto/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 #wget https://raw.githubusercontent.com/zahwanugrah/auto/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
-# setting vnstat
-apt -y install vnstat
-/etc/init.d/vnstat restart
-apt -y install libsqlite3-dev
-wget https://humdi.net/vnstat/vnstat-2.6.tar.gz
-tar zxvf vnstat-2.6.tar.gz
-cd vnstat-2.6
-./configure --prefix=/usr --sysconfdir=/etc && make && make install
-cd
-vnstat -u -i $NET
-sed -i 's/Interface "'""eth0""'"/Interface "'""$NET""'"/g' /etc/vnstat.conf
-chown vnstat:vnstat /var/lib/vnstat -R
-systemctl enable vnstat
-/etc/init.d/vnstat restart
-rm -f /root/vnstat-2.6.tar.gz
-rm -rf /root/vnstat-2.6
- 
 #rm -f /root/ssh-vpn.sh
 #rm -f /root/sstp.sh
 rm -f /root/wg.sh
